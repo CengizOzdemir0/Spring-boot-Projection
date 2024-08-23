@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    open-in-view: false
+  application:
+    name: cengiz_postgres
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db?stringtype=unspecified&prepareThreshold=0&ApplicationName=${spring.application.name}
+    jdbc-url: jdbc:postgresql://localhost:5432/db?stringtype=unspecified&prepareThreshold=0&ApplicationName=${spring.application.name}
+    username: test123
+    password: test123
+    hikari:
+      minimum-idle: 30
+      maximum-pool-size: 350
+      connection-timeout: 10000
+      idle-timeout: 2000
+      max-lifetime: 1000
+      auto-commit: false
